@@ -405,11 +405,6 @@ img {
   fill: currentColor;
 }
 
-svg {
-  width: 104px;
-  height: 56px;
-}
-
 /* ----------------------------Footer-------------- */
 .footer {
   background-color: var(--main-color);
