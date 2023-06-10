@@ -127,8 +127,7 @@ img {
   color: var(--color-active);
 }
 
-.content:hover::after,
-.content:focus::after {
+.content::after {
   content: "";
   position: absolute;
   width: 48px;
