@@ -410,11 +410,14 @@ img {
 .footer {
   background-color: var(--main-color);
   padding: 100px 0;
-  display: flex;
 }
 
 .footer-div {
+  display: flex;
   align-items: baseline;
+}
+
+.footer-div-logo {
   margin-right: 120px;
 }
 
