@@ -9,6 +9,7 @@
   --border-header: #e7e9fc;
   --border: #8e8f99;
   --btn-color: #e7e9fc;
+  --footer-social: #31d0aa;
 }
 
 body {
@@ -409,7 +410,14 @@ img {
 .footer {
   background-color: var(--main-color);
   padding: 100px 0;
+  display: flex;
 }
+
+.footer-div {
+  align-items: baseline;
+  margin-right: 120px;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -437,6 +445,45 @@ img {
   letter-spacing: 0.02em;
   color: var(--bcg-pink);
   max-width: 264px;
+}
+
+.social-media-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.footer-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-item {
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bcg-btn-main);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--footer-social);
+}
+
+.footer-icon {
+  fill: var(--bcg-pink);
 }
 
 /********************---Portfolio--***********************/
