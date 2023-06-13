@@ -22,7 +22,8 @@ body {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -58,7 +59,6 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -172,10 +172,12 @@ img {
 .hero {
   padding: 188px 0;
   background-color: var(--main-color);
-}
-
-.hero-container {
-  background-image: url(../images/heroimg.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/img-name.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -211,7 +213,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 16px 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
