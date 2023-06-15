@@ -121,6 +121,10 @@ img {
   position: relative;
 }
 
+.current {
+  color: var(--bcg-btn-active);
+}
+
 .current::after {
   display: block;
   content: "";
@@ -573,7 +577,7 @@ img {
   border: 0;
 }
 
-.example-name {
+.example-name .overlay {
   padding: 32px 16px;
   border: 1px solid var(--border-header);
   border-top: none;
@@ -624,9 +628,9 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
-  transition: opasity translate;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal {
   width: 408px;
   min-height: 584px;
