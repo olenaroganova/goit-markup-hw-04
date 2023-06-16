@@ -187,6 +187,8 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -318,14 +320,14 @@ img {
 
 .people {
   background-color: var(--color-white);
-  width: calc((100% - 24px * 3) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .name-people {
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 
 .ourteam-subtitle {
@@ -345,6 +347,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-color);
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .network {
@@ -580,6 +583,13 @@ img {
 .examples-a:hover .overlay,
 .examples-a:focus .overlay {
   transform: translateY(0%);
+}
+
+.example-name {
+  padding: 32px 16px;
+
+  border: 1px solid var(--border-header);
+  border-top: none;
 }
 
 .example-name .overlay {
